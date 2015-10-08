@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Sample.Views.View2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UserControl.Resources>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="480" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="230"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="310"/>
+                <ColumnDefinition Width="170"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Name="ListBoxPrinterName" Grid.Column="0" Margin="5">
+            </ListBox>
+            <Button  Content="Button1" Name="ButtonPrinter" Grid.Column="1" Margin="5">
+            </Button>
+        </Grid>
+        <ListView Name="ListViewInformation" Grid.Column="0" Grid.Row="1" Margin="5" >
+        </ListView>
+    </Grid>
+</UserControl>
