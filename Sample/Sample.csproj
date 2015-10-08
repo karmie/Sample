@@ -54,6 +54,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Database.cs" />
+    <Compile Include="Tool\RelayCommand.cs" />
+    <Compile Include="Tool\Update.cs" />
     <Compile Include="ViewModels\ViewModel3.cs" />
     <Compile Include="Views\View1.xaml.cs">
       <DependentUpon>View1.xaml</DependentUpon>
@@ -116,9 +118,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tool\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Views\IMG.jpg" />
   </ItemGroup>

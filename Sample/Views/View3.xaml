@@ -18,7 +18,7 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Column="0">
                         <StackPanel>
-                            <Label Content="Title" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Foreground="Red"/>
+                            <Label Content="List" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Foreground="{Binding FontColor}"/>
                             <ListBox Name="ColorList" ItemsSource="{Binding color}" DisplayMemberPath="Color" HorizontalAlignment="Left" Height="134" Margin="20" VerticalAlignment="Bottom"  Width="534">
                             </ListBox>
                         </StackPanel>
@@ -26,7 +26,7 @@
                     <Grid Grid.Column="1">
                         <StackPanel>
                             <ProgressBar HorizontalAlignment="Right" Height="26" Margin="20" VerticalAlignment="Bottom"  Width="150"/>
-                            <Button Content="Chang Color"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Width="Auto"/>
+                            <Button Content="Chang Color" Command="{Binding ChangeColor}" CommandParameter="{Binding SelectedItem, ElementName=ColorList}"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Width="Auto"/>
                             <Button Content="Cancel"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Width="75"/>
                         </StackPanel>
                     </Grid>
