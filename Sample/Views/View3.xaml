@@ -1,6 +1,10 @@
 ﻿<UserControl x:Class="Sample.Views.View3"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Sample">
+    <UserControl.DataContext>
+        <local:ViewModel3/>
+    </UserControl.DataContext>
     <Grid>
         <TabControl Height="260" Width="790" Margin="5">
             <TabItem Name="Tab1" Header="Status" Height="20" Width="Auto">
@@ -15,7 +19,7 @@
                     <Grid Grid.Column="0">
                         <StackPanel>
                             <Label Content="Title" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Foreground="Red"/>
-                            <ListBox Name="ColorList" DisplayMemberPath="Color" HorizontalAlignment="Left" Height="134" Margin="20" VerticalAlignment="Bottom"  Width="534">
+                            <ListBox Name="ColorList" ItemsSource="{Binding color}" DisplayMemberPath="Color" HorizontalAlignment="Left" Height="134" Margin="20" VerticalAlignment="Bottom"  Width="534">
                             </ListBox>
                         </StackPanel>
                     </Grid>
