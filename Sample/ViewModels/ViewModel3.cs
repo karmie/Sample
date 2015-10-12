@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Threading;
 
 namespace Sample
 {
@@ -25,6 +26,7 @@ namespace Sample
             };
 
             FontColor = "Blue";
+            Value = 0;
 
             changeColor = new RelayCommand(changecolor, CanExecute);
 
@@ -43,9 +45,20 @@ namespace Sample
                 if (_FontColor != value)
                 {
                     _FontColor = value;
-
-
+                    RaisePropertyChanged("FontColor");
                 }
+            }
+        }
+
+        public int _Value;
+
+        public int Value
+        {
+            get { return this._Value; }
+            set
+            {
+                this._Value = value;
+                RaisePropertyChanged("Value");
             }
         }
 
@@ -64,12 +77,14 @@ namespace Sample
 
         public void changecolor(object SelectedItem)
         {
+            //Set the value of process.
+            SetProgress();
 
+            //Change the color which color I choose. 
             var C = SelectedItem as Database;
             FontColor = C.Color;
 
-            RaisePropertyChanged("FontColor");
-
+            Value = 0;
 
         }
 
@@ -77,6 +92,20 @@ namespace Sample
         {
             return true;
         }
+
+        private void SetProgress()
+        {
+            int i = 0;
+
+            while (i <= 100)
+            {
+                Value = i;
+
+                Thread.Sleep(50);
+                i += 10;
+            }
+        }
+
 
 
     }
