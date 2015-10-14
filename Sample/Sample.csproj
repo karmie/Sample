@@ -58,6 +58,7 @@
     <Compile Include="Tool\RelayCommand.cs" />
     <Compile Include="Tool\Update.cs" />
     <Compile Include="ViewModels\ViewModel1.cs" />
+    <Compile Include="ViewModels\ViewModel2.cs" />
     <Compile Include="ViewModels\ViewModel3.cs" />
     <Compile Include="Views\View1.xaml.cs">
       <DependentUpon>View1.xaml</DependentUpon>

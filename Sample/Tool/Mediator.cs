@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sample
+namespace Tool
 {
     ///  <summary> 
     /// Available cross ViewModel messages

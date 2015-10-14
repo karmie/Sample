@@ -6,8 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Threading;
+using Models;
+using Tool;
 
-namespace Sample
+namespace ViewModels
 {
     class ViewModel3 : Update
     {

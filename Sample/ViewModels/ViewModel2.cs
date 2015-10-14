@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models
+namespace ViewModels
 {
-    class Database
+    class ViewModel2
     {
-        public string Color
-        {
-            get;
-            set;
-        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿<UserControl x:Class="Sample.Views.View3"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Sample">
+             xmlns:local="clr-namespace:ViewModels">
     <UserControl.DataContext>
         <local:ViewModel3/>
     </UserControl.DataContext>
