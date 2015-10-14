@@ -51,6 +51,7 @@ namespace ViewModels
                     _FontColor = value;
                     RaisePropertyChanged("FontColor");
                     Mediator.Instance.NotifyColleagues(ViewModelMessages.MessageType1 , value);
+                    Mediator.Instance.NotifyColleagues(ViewModelMessages.MessageType2 , value);
                 }
             }
         }

@@ -11,8 +11,8 @@ namespace ViewModels
     {
         public ViewModel1()
         {
-            //BorderColor = "Red";
-            Mediator.Instance.Register(ViewModelMessages.MessageType1, param => { BorderColor = param as string; });
+            
+            Mediator.Instance.Register(ViewModelMessages.MessageType2, param => { BorderColor = param as string; });
             
         }
 

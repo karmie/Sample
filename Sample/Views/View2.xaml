@@ -20,7 +20,7 @@
             </Grid.ColumnDefinitions>
             <ListBox Name="ListBoxPrinterName" Grid.Column="0" Margin="5">
             </ListBox>
-            <Button  Content="Button1" Name="ButtonPrinter" Grid.Column="1" Margin="5">
+            <Button  Content="Button1" Name="ButtonPrinter" Grid.Column="1" Margin="5" Background="{Binding bColor}">
             </Button>
         </Grid>
         <ListView Name="ListViewInformation" Grid.Column="0" Grid.Row="1" Margin="5" >

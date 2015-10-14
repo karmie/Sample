@@ -11,7 +11,8 @@ namespace Tool
     ///  </summary> 
     public enum ViewModelMessages
     {
-        MessageType1 = 1,
+        MessageType1 = 1, 
+        MessageType2,
     };
 
     ///  <summary> 
