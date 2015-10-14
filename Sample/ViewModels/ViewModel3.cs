@@ -27,6 +27,8 @@ namespace Sample
 
             FontColor = "Blue";
             Value = 0;
+            
+
 
             changeColor = new RelayCommand(changecolor, CanExecute);
 
@@ -46,6 +48,7 @@ namespace Sample
                 {
                     _FontColor = value;
                     RaisePropertyChanged("FontColor");
+                    Mediator.Instance.NotifyColleagues(ViewModelMessages.MessageType1 , value);
                 }
             }
         }
