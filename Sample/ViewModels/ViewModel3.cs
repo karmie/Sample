@@ -8,14 +8,18 @@ using System.Windows.Input;
 using System.Threading;
 using Models;
 using Tool;
+using Sample;
+using System.Windows;
 
 namespace ViewModels
 {
-    class ViewModel3 : Update
+    class ViewModel3 : Basic
     {
         public ObservableCollection<Database> color { get; set; }
 
         public ICommand changeColor { get; set; }
+        public RelayCommand SecondWindows { get; set; }
+
 
         public ViewModel3()
         {
@@ -33,6 +37,7 @@ namespace ViewModels
 
 
             changeColor = new RelayCommand(changecolor, CanExecute);
+            SecondWindows = new RelayCommand(NextWindow);
 
         }
 
@@ -110,6 +115,14 @@ namespace ViewModels
                 Thread.Sleep(50);
                 i += 10;
             }
+        }
+
+        void NextWindow(object parameter)
+        {
+            var win = new SecondWindow();
+            win.Show();
+            Application.Current.MainWindow.Close();
+            //CloseWindow();
         }
 
 

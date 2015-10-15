@@ -54,9 +54,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Database.cs" />
+    <Compile Include="SecondWindow.xaml.cs">
+      <DependentUpon>SecondWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tool\Mediator.cs" />
     <Compile Include="Tool\RelayCommand.cs" />
-    <Compile Include="Tool\Update.cs" />
+    <Compile Include="Tool\Basic.cs" />
     <Compile Include="ViewModels\ViewModel1.cs" />
     <Compile Include="ViewModels\ViewModel2.cs" />
     <Compile Include="ViewModels\ViewModel3.cs" />
@@ -81,6 +84,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SecondWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\View1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -27,7 +27,7 @@
                         <StackPanel>
                             <ProgressBar HorizontalAlignment="Right" Height="26" Margin="20" VerticalAlignment="Bottom"  Width="150" Maximum="100" Minimum="0" Value="{Binding Value, UpdateSourceTrigger=PropertyChanged}"/>
                             <Button Content="Chang Color" Command="{Binding ChangeColor, UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding SelectedItem, ElementName=ColorList}"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Width="Auto"/>
-                            <Button Content="Cancel"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Width="75"/>
+                            <Button Content="Next"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Width="75" Command="{Binding SecondWindows}"/>
                         </StackPanel>
                     </Grid>
                 </Grid>

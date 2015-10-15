@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
 
 namespace Tool
 {
-    public class Update : INotifyPropertyChanged
+    public class Basic : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -18,5 +20,6 @@ namespace Tool
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
             }
         }
+
     }
 }

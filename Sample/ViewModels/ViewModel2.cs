@@ -7,7 +7,7 @@ using Tool;
 
 namespace ViewModels
 {
-    class ViewModel2 : Update
+    class ViewModel2 : Basic
     {
          public ViewModel2()
         {
